@@ -1,0 +1,74 @@
+html{
+  border-top: solid 3px #055;
+}
+body {
+  width: 1000px;
+  margin: 0 auto 0;
+  font-family: sans-serif;
+  color: white;
+  background: #234;
+}
+a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover { text-decoration: underline;}
+
+/* cv */
+#cv {
+  box-sizing: border-box;
+  width: 210mm;
+  padding:0 2.54cm;
+}
+#cv-title {
+  display: inline-block;
+  width: 49%;
+  font-size: large;
+}
+#cv-name { font-size:xx-large; }
+#cv-contact {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+#cv section {
+  margin: 10px;
+}
+#cv section p { margin: 0; }
+
+/* header */
+header {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 30px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  overflow: hidden;
+  background: transparent;
+  animation-name: close;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+header img {
+  vertical-align: middle;
+  float: left;
+}
+header:hover {
+  animation-name: open;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+a.header:hover { text-decoration: none; }
+@keyframes open {
+    from { width: 20px; }
+    to { width: 200px; }
+}
+@keyframes close {
+  from { width: 200px; }
+  to { width: 20px }
+}
