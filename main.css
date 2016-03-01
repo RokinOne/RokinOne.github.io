@@ -14,28 +14,6 @@ a:link, a:hover, a:visited {
 }
 a:hover { text-decoration: underline;}
 
-/* cv */
-#cv {
-  box-sizing: border-box;
-  width: 210mm;
-  padding:0 2.54cm;
-}
-#cv-title {
-  display: inline-block;
-  width: 49%;
-  font-size: large;
-}
-#cv-name { font-size:xx-large; }
-#cv-contact {
-  display: inline-block;
-  width: 49%;
-  text-align: right;
-}
-#cv section {
-  margin: 10px;
-}
-#cv section p { margin: 0; }
-
 /* header */
 header {
   display: block;
@@ -72,3 +50,30 @@ a.header:hover { text-decoration: none; }
   from { width: 200px; }
   to { width: 20px }
 }
+
+/* info */
+h2 {}
+p#date { font-size: small; }
+section#about {}
+
+/* cv */
+#cv {
+  box-sizing: border-box;
+  width: 210mm;
+  padding:0 2.54cm;
+}
+#cv-title {
+  display: inline-block;
+  width: 49%;
+  font-size: large;
+}
+#cv-name { font-size:xx-large; }
+#cv-contact {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+#cv section {
+  margin: 10px;
+}
+#cv section p { margin: 0; }
