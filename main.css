@@ -14,12 +14,15 @@ a:link, a:hover, a:visited {
 }
 a:hover { text-decoration: underline;}
 
+/* helper */
+.bold { font-weight: bold; }
+
 /* header */
 header {
   display: block;
   width: 20px;
   height: 20px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -77,3 +80,6 @@ section#about {}
   margin: 10px;
 }
 #cv section p { margin: 0; }
+#cv h2 {
+  font-size: large;
+  color: #777; }
