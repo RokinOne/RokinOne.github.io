@@ -20,39 +20,23 @@ a:hover { text-decoration: underline;}
 /* header */
 header {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 60px;
   margin: 0 auto;
-  line-height: 20px;
+  line-height: 60px;
   text-transform: uppercase;
   text-align: center;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   overflow: hidden;
   background: transparent;
-  animation-name: close;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 header img {
-  vertical-align: middle;
-  float: left;
-}
-header:hover {
-  animation-name: open;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  position: absolute;
+  left: 0;
 }
 a.header:hover { text-decoration: none; }
-@keyframes open {
-    from { width: 20px; }
-    to { width: 200px; }
-}
-@keyframes close {
-  from { width: 200px; }
-  to { width: 20px }
-}
 
 /* info */
 h2 {}
