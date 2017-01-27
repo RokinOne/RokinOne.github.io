@@ -38,6 +38,12 @@ header img {
 }
 a.header:hover { text-decoration: none; }
 
+.links a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+}
+
 /* info */
 h2 {}
 p#date { font-size: small; }
