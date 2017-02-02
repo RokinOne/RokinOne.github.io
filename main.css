@@ -38,6 +38,10 @@ header img {
 }
 a.header:hover { text-decoration: none; }
 
+.profiles a img:hover {
+  background: #567;
+}
+
 .links a {
   display: block;
   height: 60px;
