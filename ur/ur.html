@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Royal Game of Ur</title>
+    <meta name="description" content="Royal Game of Ur">
+    <link id="favicon" rel="icon" href="board.svg" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ur.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>
+        Royal Game of Ur
+      </h1>
+    </header>
+
+    <main>
+      <button id="roll">roll</button>
+      <div id="result"></div>
+      <div id="roll-history"></div>
+      
+      <br><br><br>
+      
+      <div>
+        <div id="blackStartPool" class="marker black"></div>
+        <div id="blackEndPool" class="marker black"></div>
+      </div>
+
+      <div id="board">
+        <div id="cellB4" class="cell again"></div>
+        <div id="cellB3" class="cell"></div>
+        <div id="cellB2" class="cell"></div>
+        <div id="cellB1" class="cell"></div>
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <div id="cellB14" class="cell again"></div>
+        <div id="cellB13" class="cell"></div>
+        <br>
+        <div id="cellM5" class="cell"></div>
+        <div id="cellM6" class="cell"></div>
+        <div id="cellM7" class="cell"></div>
+        <div id="cellM8" class="cell again"></div>
+        <div id="cellM9" class="cell"></div>
+        <div id="cellM10" class="cell"></div>
+        <div id="cellM11" class="cell"></div>
+        <div id="cellM12" class="cell"></div>
+        <br>
+        <div id="cellW4" class="cell again"></div>
+        <div id="cellW3" class="cell"></div>
+        <div id="cellW2" class="cell"></div>
+        <div id="cellW1" class="cell"></div>
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <div id="cellW14" class="cell again"></div>
+        <div id="cellW13" class="cell"></div>
+      </div>
+      
+    
+      <div>
+        <div id="whiteStartPool" class="marker white"></div>
+        <div id="whiteEndPool" class="marker white"></div>
+      </div>
+      
+      <div id="playerStatus"></div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="ur.js"></script>
+
+  </body>
+</html>
