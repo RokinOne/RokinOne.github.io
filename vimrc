@@ -20,3 +20,7 @@ hi cursorcolumn guibg=Grey20
 
 " no message when found existing swap file
 set shortmess+=A
+
+" controls
+noremap s :update<CR>
+noremap q :quit<CR>
