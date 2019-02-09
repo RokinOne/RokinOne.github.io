@@ -43,7 +43,13 @@ a.header:hover { text-decoration: none; }
 }
 
 .links a {
-  display: block;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 12px;
+  background: #123;
+  text-align: center;
+  line-height: 150px;
 }
 
 /* info */
