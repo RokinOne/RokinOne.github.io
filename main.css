@@ -42,6 +42,12 @@ a.header:hover { text-decoration: none; }
   background: #567;
 }
 
+.info {
+  width: 100%;
+  max-width: 600px;
+  margin: 12px auto;
+}
+
 .links a {
   display: inline-block;
   width: 120px;
