@@ -2,7 +2,7 @@ html{
   border-top: solid 6px #006a50;
 }
 body {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto 0;
   font-family: sans-serif;
   color: white;
@@ -24,7 +24,7 @@ header {
   height: 60px;
   margin: 0 auto;
   line-height: 60px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   font-family: monospace;
   font-size: 36px;
@@ -42,7 +42,7 @@ a.header:hover { text-decoration: none; }
   background: #567;
 }
 
-.info {
+.center {
   width: 100%;
   max-width: 600px;
   margin: 12px auto;
