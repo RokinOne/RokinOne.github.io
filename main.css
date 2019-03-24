@@ -44,12 +44,13 @@ a.header:hover { text-decoration: none; }
 
 .links a {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 60px;
   margin: 12px;
+  padding: 12px 0;
   background: #123;
   text-align: center;
-  line-height: 150px;
+  vertical-align: top;
 }
 
 /* info */
