@@ -4,6 +4,14 @@ alias search='grep -rin $PWD -e'
 alias fileinfo='$HOME/documents/fileinfo'
 alias ls='ls --color -AopX --time-style=long-iso --group-directories-first'
 alias hddinfo='lsblk -o NAME,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,PARTFLAGS,SIZE,OWNER,GROUP,STATE'
+alias genindex='tree -lfi > "${PWD##*/}"-index'
+
+# MACHINE INFO ALIASES
+alias uname='uname -nor'
+alias lsbrelease='lsb_release -d'
+alias lssession='ls /usr/bin/*session'
+alias hostname='hostname -f'
+alias machineinfo='uname;lsbrelease;lssession;hostname'
 
 # GIT ALIASES
 alias gs='git status'
