@@ -6,6 +6,7 @@ alias timestamp='date +%Y-%m-%d" "%H:%M'
 alias ls='ls --color -Aop --time-style=long-iso --group-directories-first'
 alias hddinfo='lsblk -o NAME,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,PARTFLAGS,SIZE,OWNER,GROUP,STATE'
 alias timestamp='date +%Y-%m-%d" "%H:%M'
+alias loginhist='cat /var/log/auth.log'
 
 # MACHINE INFO ALIASES
 alias uname='uname -nor'
