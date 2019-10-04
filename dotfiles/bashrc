@@ -7,6 +7,7 @@ alias ls='ls --color -Aop --time-style=long-iso --group-directories-first'
 alias hddinfo='lsblk -o NAME,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,PARTFLAGS,SIZE,OWNER,GROUP,STATE'
 alias timestamp='date +%Y-%m-%d" "%H:%M'
 alias loginhist='cat /var/log/auth.log'
+alias path='echo $PATH | tr ":" "\n"'
 
 # MACHINE INFO ALIASES
 alias uname='uname -nor'
@@ -19,7 +20,7 @@ alias storage='df -Th .'
 # GIT ALIASES
 alias gs='git status'
 alias ga='git add -uv'
-alias gb='git branch'
+alias gb='git branch -av --color'
 alias gc='git commit'
 alias gd='git diff'
 alias gp='git pull -r'
@@ -45,7 +46,7 @@ fi
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\n\[$(tput bold)\]\[\033[38;5;4m\]\u\[$(tput sgr0)\]\[\033[38;5;4m\]@\h\[$(tput sgr0)\]\[\033[38;5;7m\]\w\[$(tput sgr0)\]\$(parse_git_branch)\[\033[00m\] > "
+export PS1="\n\[$(tput bold)\]\[\033[38;5;4m\]\u\[$(tput sgr0)\]\[\033[38;5;4m\]@\h\[$(tput sgr0)\]\[\033[38;5;7m\]\w\[$(tput sgr0)\]\$(parse_git_branch)\[\033[00m\]\n> "
 
 # colorize ls output
 LS_COLORS=$LS_COLORS:'di=1;37:ln=0;33:ex=0;32:so=0;37:ow=1;37:': ; export LS_COLORS
